@@ -22,9 +22,9 @@ export default async function Page({ params }: { params: { id: string } }) {
             href: `/dashboard/invoices/${id}/edit`,
             active: true,
           },
-          <Form invoice={invoice} customers={customers} />,
         ]}
       />
+      <Form invoice={invoice} customers={customers} />
     </main>
   );
 }
